@@ -1,298 +1,404 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <title>Pagina de prueba en CSS</title>
-    <link rel="icon" type="favicon/x-icon" href="img/supertux.png" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-  </head>
 
-  <body>
-    <!--Inicio de la cabecera-->
+<head>
+    <meta charset="utf-8" />
+    <title>Master en CSS</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+
+</head>
+
+<body>
+    <!--inicio de la cabezera-->
+
     <header id="header">
-      <div class="wrap">
-        <div id="logo">
-          <span class="gear">S</span>
-          <h3>BLOG</h3>
+        <div id="logotipo">
+            <img src="img/logo.png" />
         </div>
 
-        <nav id="menu">
-          <ul>
-            <li><a href="#">INICIO</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">FORMACION</a></li>
-            <li><a href="#">CONTACTO</a></li>
-          </ul>
-        </nav>
-      </div>
+        <h1>
+            <a href="index.html">
+                MASTER EN CSS
+            </a>
+        </h1>
+
     </header>
-    <!--Fin de cabecera-->
 
-    <section class="wrap wrap-content">
-      <section id="info">
-        <!--Inicio Banner -->
-        <div id="banner">
-          <h1>PAGINA DESARROLLADA CON ANIMACIONES</h1>
+
+
+    <!--fin de la cabezera-->
+
+    <!--menu de navegacion-->
+    <nav id="nav">
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+
+            <li>
+                <a href="index.html">Contenido</a>
+            </li>
+
+            <li>
+                <a href="index.html">Requerimientos</a>
+            </li>
+
+            <li>
+                <a href="index.html">Lenguajes</a>
+                <ul>
+
+                    <li>
+                        <a href="index.html">HTML</a>
+                    </li>
+
+                    <li>
+                        <a href="index.html">CSS</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="index.html">Frameworks</a>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">LESS</a>
+                    </li>
+
+                    <li>
+                        <a href="index.html">SASS</a>
+                    </li>
+
+                    <li>
+                        <a href="index.html">BOOSTRAP 4</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="index.html">El instructor</a>
+            </li>
+
+            <li>
+                <a href="index.html">Reseñas</a>
+            </li>
+
+            <li>
+                <a href="index.html">Blog</a>
+            </li>
+
+            <li>
+                <a href="index.html">Contacto</a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <!--fin de menu de navegacion-->
+
+
+    <!--INICIO DEL CONTENIDO CENTRAL-->
+    <div id="content">
+
+        <!--INICIO DE LA BARRA LATERAL-->
+        <aside id="aside">
+            <div class="widget" id="login">
+                <h3>Entrar a la web</h3>
+                <form>
+                    <label>Usuario:</label>
+                    <input type="text" />
+
+                    <label>Contraseña:</label>
+                    <input type="password" />
+
+                    <input type="submit" value="Entrar" />
+
+                </form>
+
+                <a href="index.html">Zona de alumnos</a>
+                <a href="index.html">Zona del profesor</a>
+                <a href="index.html">Acceso de Calificaciones</a>
+            </div>
+
+            <div class="widget" id="login">
+                <h3 class="blue">Aula virtual 1</h3>
+                <form>
+                    <label>Nombre de Usuario:</label>
+                    <input type="text" />
+
+                    <label>Contraseña:</label>
+                    <input type="password" />
+
+                    <input type="submit" value="Entrar" />
+
+
+
+                </form>
+            </div>
+
+            <div class="widget" id="login">
+                <h3 class="red">Aula virtual 2</h3>
+                <form>
+                    <label>Nombre de Usuario:</label>
+                    <input type="text" />
+
+                    <label>Contraseña:</label>
+                    <input type="password" />
+
+                    <input type="submit" value="Entrar" />
+
+
+                </form>
+            </div>
+
+
+            <div class="widget" id="login">
+                <h3>Enlaces de interes</h3>
+                <ul>
+                    <li>
+                        <a href="#">Master en javascript</a>
+                    </li>
+                    <li>
+                        <a href="#">Master en PHP</a>
+                    </li>
+                    <li>
+                        <a href="#">Master en Frameworks JS</a>
+                    </li>
+                    <li>
+                        <a href="#">Curso de Git y comandos linux</a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </aside>
+        
+
+        <!--FIN DE LA BARRA LATERAL-->
+        <!--Inicio de las secciones-->
+
+        <div id="sections">
+
+            <section id="frontend">
+                <span class="stikers">
+
+                    <img class="stikerone" src="img/scotch.png" alt="pegatina"/>
+                    <img class="stikertwo" src="img/scotch.png" alt="pegatina"/>
+
+                </span>
+                <h2 class="titulo">Noticias de front-end</h2>
+                <article class="article">
+                    <span class="icons">a</span>
+                    <p>
+                        <a href="#">Titulo de la entrada</a>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy
+
+                    </p>
+                    <span class="date">[20-12-2020. Danilo Nieves]</span>
+
+                </article>
+                <article class="article">
+                    <span class="icons">a</span>
+                    <p>
+                        <a href="#">Titulo de la entrada</a>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy
+
+                    </p>
+                    <span class="date">[20-12-2020. Danilo Nieves]</span>
+
+                </article>
+                <article class="article">
+                    <span class="icons">a</span>
+                    <p>
+                        <a href="#">Titulo de la entrada</a>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy
+
+                    </p>
+                    <span class="date">[20-12-2020. Danilo Nieves]</span>
+
+                </article>
+                <article class="article">
+                    <span class="icons">a</span>
+                    <p>
+                        <a href="#">Titulo de la entrada</a>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy
+
+                    </p>
+                    <span class="date">[20-12-2020. Danilo Nieves]</span>
+
+                </article>
+            </section>
+
         </div>
-        <!--Fin Banner -->
-      </section>
-      <!--Inicio tarjetas -->
-      <div id="cards">
-        <div class="card">
-          <p class="icon">H</p>
-          <h2 class="category">Desarrollo web</h2>
-          <p class="description">
-            Aprende los principales lenguajes para desarrollar webs ¡
-            Conviertete en un webmaster!
-          </p>
-        </div>
 
-        <div class="card">
-          <p class="icon">_</p>
-          <h2 class="category">Sistemas Operativos</h2>
-          <p class="description">
-            Aprende a administrar sistemas Linux y Windows
-          </p>
-        </div>
 
-        <div class="card">
-          <p class="icon">S</p>
-          <h2 class="category">Hardware</h2>
-          <p class="description">Conoce los entresijos del hardware.</p>
-        </div>
+<!--sections 2-->
 
-        <div class="card">
-          <p class="icon">u</p>
-          <h2 class="category">Redes e Internet</h2>
-          <p class="description">
-            Aprende a configurar y administrar redes informaticas y servidores.
-          </p>
-        </div>
 
-        <div class="card">
-          <p class="icon">a</p>
-          <h2 class="category">Bases de datos</h2>
-          <p class="description">
-            Aprende a montar y administrar bases de datos.
-          </p>
-        </div>
-        <!--Fin de tarjetas -->
-      </div>
-      <!--Inicio barra lateral-->
-      <div class="clearfix"></div>
-      <aside id="lateral">
-        <h3>BUSCAR</h3>
-        <div id="search">
-          <form>
-            <input type="text" />
-            <input type="button" value="L" class="icon" />
-          </form>
-        </div>
+<div id="sections">
 
-        <h3>LOGIN</h3>
-        <div id="login" class="aside-box">
-          <form>
-            <label id="user" class="icon">U</label>
-            <input type="email" />
+    <section id="backend">
+        <span class="stikers">
 
-            <label id="password" class="icon">w</label>
-            <input type="password" />
+            <img class="stikerone" src="img/scotch.png" alt="pegatina"/>
+            <img class="stikertwo" src="img/scotch.png" alt="pegatina"/>
 
-            <input type="submit" value="Entrar" />
-            <input type="reset" value="Limpiar" />
+        </span>
+        <h2 class="titulo red">Noticias de backend</h2>
+        <article class="article">
+            <span class="icons">a</span>
+            <p>
+                <a href="#">Titulo de la entrada</a>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy
 
-            <a href="#">Registrate aqui</a>
-            <a href="#">¿Has olvidado la contraseña?</a>
-          </form>
-        </div>
-
-        <h3>REDES SOCIALES</h3>
-        <div id="social" class="aside-box">
-          <div class="twitter">
-            <a href="#" class="icon">t</a>
-            <p class="overlay">
-              Twitter
             </p>
-          </div>
-          <div class="facebook">
-            <a href="#" class="icon">f</a>
-             <p class="overlay">
-              Facebook
+            <span class="date">[20-12-2020. Danilo Nieves]</span>
+
+        </article>
+        <article class="article">
+            <span class="icons">a</span>
+            <p>
+                <a href="#">Titulo de la entrada</a>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy
+
             </p>
-          </div>
-          <div class="youtube">
-            <a href="#" class="icon">y</a>
-             <p class="overlay">
-              Youtube
+            <span class="date">[20-12-2020. Danilo Nieves]</span>
+
+        </article>
+        <article class="article">
+            <span class="icons">a</span>
+            <p>
+                <a href="#">Titulo de la entrada</a>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy
+
             </p>
-          </div>
-        </div>
+            <span class="date">[20-12-2020. Danilo Nieves]</span>
 
-        <h3>PATROCINADORES</h3>
-        <div id="sponsors" class="aside-box"></div>
-      </aside>
-      <!--Fin barra lateral-->
+        </article>
+        <article class="article">
+            <span class="icons">a</span>
+            <p>
+                <a href="#">Titulo de la entrada</a>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy
 
-      <!--Inicio articulos-->
-      <section id="articles">
-        <h2>Últimos artículos</h2>
-        <div class="clearfix"></div>
-        <article>
-          <div class="data">
-            <span>Fecha: 12 dic</span>
-            <span>Categoria: Pruebas</span>
-          </div>
-          <h4>
-            <a href="#">Titulo del articulo</a>
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
-            nisl purus in. Sodales ut eu sem integer vitae justo eget. Urna
-            cursus eget nunc scelerisque viverra.
-          </p>
-        </article>
-        <article>
-          <div class="data">
-            <span>Fecha: 12 dic</span>
-            <span>Categoria: Pruebas</span>
-          </div>
-          <h4>
-            <a href="#">Titulo del articulo</a>
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
-            nisl purus in. Sodales ut eu sem integer vitae justo eget. Urna
-            cursus eget nunc scelerisque viverra.
-          </p>
-        </article>
-        <article>
-          <div class="data">
-            <span>Fecha: 12 dic</span>
-            <span>Categoria: Pruebas</span>
-          </div>
-          <h4>
-            <a href="#">Titulo del articulo</a>
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
-            nisl purus in. Sodales ut eu sem integer vitae justo eget. Urna
-            cursus eget nunc scelerisque viverra.
-          </p>
-        </article>
-        <article>
-          <div class="data">
-            <span>Fecha: 12 dic</span>
-            <span>Categoria: Pruebas</span>
-          </div>
-          <h4>
-            <a href="#">Titulo del articulo</a>
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
-            nisl purus in. Sodales ut eu sem integer vitae justo eget. Urna
-            cursus eget nunc scelerisque viverra.
-          </p>
-        </article>
-        <article>
-          <div class="data">
-            <span>Fecha: 12 dic</span>
-            <span>Categoria: Pruebas</span>
-          </div>
-          <h4>
-            <a href="#">Titulo del articulo</a>
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
-            nisl purus in. Sodales ut eu sem integer vitae justo eget. Urna
-            cursus eget nunc scelerisque viverra.
-          </p>
-        </article>
-        <article>
-          <div class="data">
-            <span>Fecha: 12 dic</span>
-            <span>Categoria: Pruebas</span>
-          </div>
-          <h4>
-            <a href="#">Titulo del articulo</a>
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
-            nisl purus in. Sodales ut eu sem integer vitae justo eget. Urna
-            cursus eget nunc scelerisque viverra.
-          </p>
-        </article>
+            </p>
+            <span class="date">[20-12-2020. Danilo Nieves]</span>
 
-        <article id="blog">
-          <a href="#">Ir al blog</a>
         </article>
-      </section>
-      <!--Fin  articulos-->
     </section>
 
-    <!-- Inicio Pie de pagina-->
-    <div class="clearfix"></div>
-    <footer id="footer">
-      <div class="wrap">
-        <div id="menu_footer">
-          <h5>MENÚ</h5>
+</div>
 
-          <ul>
-            <li><a href="#">INICIO</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">FORMACION</a></li>
-            <li><a href="#">CONTACTO</a></li>
-          </ul>
-        </div>
+<!--sections 3-->
 
-        <div id="location">
-           <h5>DONDE ESTAMOS<h5>
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15907.73924504155!2d-74.0642802642136!3d4.6056940849316135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99bfd2a459a9%3A0x352a5134b65e607b!2sMonserrate!5e0!3m2!1ses-419!2sco!4v1609020253127!5m2!1ses-419!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<div id="sections">
 
-        </div>
+    <section id="instructor">
+        <span class="stikers">
 
-        <div id="info">
-          <h5>Desarrollado con</h5>
-           <p>
-            <img
-              src="img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png"
-              alt="Creado con HTML y CSS"
-            />
-           </p>
+            <img class="stikerone" src="img/scotch.png" alt="pegatina"/>
+            <img class="stikertwo" src="img/scotch.png" alt="pegatina"/>
 
-           <h5>Optimizado para</h5>
-           <p id="browsers">
-               <a href="#">
-                   <img src="img/supertux.png" alt="Firefox" title="Firefox"/>
-               </a>
-               <a href="#">
-                   <img src="img/chrome.png" alt="chrome" title="chrome"/>
-               </a>
-               <a href="#">
-                   <img src="img/Opera_256x256.png" alt="Opera" title="Opera"/>
-               </a>
-               <a href="#">
-                   <img src="img/safari.png" alt="safari" title="safari"/>
-               </a>
-               <a href="#">
-                   <img src="img/android.png" alt="android" title="android"/>
-               </a>
-               <a href="#">
-                   <img src="img/ios.png" alt="ios" title="ios"/>
-               </a>
+        </span>
+        <h2 class="titulo orange">Noticias del instructor</h2>
+        <article class="article">
+            <span class="icons">a</span>
+            <p>
+                <a href="#">Titulo de la entrada</a>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy
+
             </p>
-            <h5>AUTOR</h5>
-            <p>&copy Desarrollado por Danilo Nieves</p>
-        </div>
-      </div>
+            <span class="date">[20-12-2020. Danilo Nieves]</span>
+
+        </article>
+        <article class="article">
+            <span class="icons">a</span>
+            <p>
+                <a href="#">Titulo de la entrada</a>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy
+
+            </p>
+            <span class="date">[20-12-2020. Danilo Nieves]</span>
+
+        </article>
+        <article class="article">
+            <span class="icons">a</span>
+            <p>
+                <a href="#">Titulo de la entrada</a>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy
+
+            </p>
+            <span class="date">[20-12-2020. Danilo Nieves]</span>
+
+        </article>
+        <article class="article">
+            <span class="icons">a</span>
+            <p>
+                <a href="#">Titulo de la entrada</a>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy
+
+            </p>
+            <span class="date">[20-12-2020. Danilo Nieves]</span>
+
+        </article>
+    </section>
+
+</div>
+
+
+        
+
+        <!--Fin  de las secciones-->
+        <aside id="frase">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy
+            <a href="index.html">Leer mas frases</a>
+        </aside>
+    <div class="clearfix"></div>
+
+
+    <div id="history">
+        <a href="#">[Ver Historico de noticias]</a>
+
+    </div>
+
+    
+</div>
+
+    <!--FIN DEL CONTENIDO CENTRAL-->
+
+    <div class="clearfix"></div>
+
+    <footer id="footer">
+        <p>&copy;Desarrollado por Danilo Nieves</p>
+        <p>Màs contenido y formarcion de Desarrollado web en <a href="#">@Danilo-Nieves</a></p>
     </footer>
-    <!-- Fin Pie de pagina-->
-  </body>
+
+
+
+
+</body>
+
+
+
 </html>
